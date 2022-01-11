@@ -1,0 +1,24 @@
+.rodape {
+    padding-bottom: 0;
+}
+
+.rodape__nav {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+    
+    grid-auto-columns: 1fr 1fr;
+    gap: 0;
+
+    padding-bottom: 2rem;
+
+    box-sizing: border-box;
+}
+
+.rodape__escuro {
+    width: 100vw;
+    background-color: var(--preto);
+
+    padding-top: 1rem;
+}

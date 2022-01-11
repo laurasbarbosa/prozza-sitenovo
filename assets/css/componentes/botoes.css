@@ -1,0 +1,30 @@
+.botao {
+    background-color: var(--secundaria1);
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: var(--branco);
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    display: block;
+    position: relative;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.botao:hover {
+    transition: 3s;
+    background: var(--secundaria2);
+    opacity: 1;
+
+    cursor: pointer;
+}

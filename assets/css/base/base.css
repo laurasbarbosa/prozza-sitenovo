@@ -1,0 +1,143 @@
+@import url(_reset.css);
+@import url(_variaveis.css);
+
+body {
+    font-family: var(--familia);
+    font-size: var(--tamanho-corpo);
+    color: var(--cinza);
+
+    background-color: var(--fundo);
+}
+
+.container {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-sizing: border-box;
+
+    padding: 1rem;
+}
+
+.container--claro {
+    background-color: var(--branco);
+}
+
+.container--azulclaro {
+    background-color: var(--azulclaro);
+}
+
+.barra {
+    background-color: var(--secundaria1);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.titulo {
+    font-size: var(--tamanho-titulo);
+    font-weight: var(--peso-titulo);
+    color: var(--primaria1);
+    
+    line-height: 2.2rem;
+
+    display: block;
+
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+}
+
+.titulo__nav {
+    font-size: 1.2rem;
+    color: var(--preto);
+
+    display: inline;
+
+    padding-right: .2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.titulo--pequeno {
+    font-size: var(--tamanho-pequeno);
+    font-weight: var(--peso-titulob);
+
+    line-height: 1.2rem;
+}
+
+.titulo--rodape {
+    font-size: 1.5rem;
+    font-weight: var(--peso-titulob);
+}
+
+.texto {
+    line-height: 1.2rem;
+
+    padding-bottom: 1rem;
+}
+
+.texto--pequeno {
+    font-size: .75rem;
+    color: var(--primaria1);
+}
+
+.texto--alto {
+    text-transform: uppercase;
+}
+
+.texto--verde {
+    color: var(--verde);
+}
+
+.texto--claro {
+    color: var(--branco);
+}
+
+.texto--escuro {
+    color: var(--preto);
+}
+
+.alinhamento--esquerda {
+    text-align: left;
+}
+
+.alinhamento--direita {
+    text-align: right;
+}
+
+.alinhamento--meio {
+    text-align: center;
+}
+
+.alinhamento--justificado {
+    text-align: justify;
+}
+
+.destaque {
+    padding-top: 5rem;
+}
+
+.personalizacao {
+    color: var(--branco);
+    background-color: var(--primaria1);
+}
+
+.integracao {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.clientes {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+footer {
+    font-family: var(--familia);
+    font-size: var(--tamanho-corpo);
+    
+    background-color: var(--fundo-secundario);
+}

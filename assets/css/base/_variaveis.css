@@ -1,0 +1,29 @@
+:root {
+    --branco: #FCFCFC;
+    --fundo: #F1F1F1;
+    --fundo-secundario: #DEDEDE;
+    --cinza: #656565;
+    --preto: #1D1D1D;
+    --azulclaro: #D2DBFC;
+
+    --primaria1: #5465FF;
+    --primaria2: #778BFF;
+    --primaria3: #9BB1FF;
+
+    --secundaria1: #5BD983;
+    --secundaria2: #86E8A5;
+    --secundaria3: #9AE3B2;
+
+    --vermelho: #D64141;
+    --verde: #28B763;
+    --amarelo: #e6ce20;
+
+    --familia: 'Montserrat', sans-serif;
+    
+    --tamanho-corpo: 1rem;
+    --tamanho-titulo: 2rem;
+    --tamanho-pequeno: 1rem;
+    
+    --peso-titulo: 500;
+    --peso-titulob: 700;
+}

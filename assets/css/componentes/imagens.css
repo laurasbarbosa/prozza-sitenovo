@@ -1,0 +1,29 @@
+.imagem {
+    width: 90vw;
+    max-width: 600px;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.imagem__logo {
+    max-width: 350px;
+    height: 4rem;
+    padding: 1rem 0.75rem;
+    box-sizing: border-box
+}
+
+.imagem__logo--2 {
+    height: 2rem;
+}
+
+.imagem__logo--3 {
+    height: 3rem;
+}
+
+.imagem__perfil {
+    width: 12.75rem;
+    height: 12.75rem;
+    border: 3px solid var(--primaria1);
+    border-radius: 100px;
+}
