@@ -1,7 +1,7 @@
 :root {
-    --branco: #FCFCFC;
-    --fundo: #F1F1F1;
+    --fundo-principal: #F1F1F1;
     --fundo-secundario: #DEDEDE;
+    --branco: #FCFCFC;
     --cinza: #656565;
     --preto: #1D1D1D;
     --azulclaro: #D2DBFC;
@@ -22,8 +22,6 @@
     
     --tamanho-corpo: 1rem;
     --tamanho-titulo: 2rem;
-    --tamanho-pequeno: 1rem;
     
-    --peso-titulo: 500;
     --peso-titulob: 700;
 }

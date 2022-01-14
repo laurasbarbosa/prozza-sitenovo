@@ -5,8 +5,9 @@ body {
     font-family: var(--familia);
     font-size: var(--tamanho-corpo);
     color: var(--cinza);
+    line-height: 1.2rem;
 
-    background-color: var(--fundo);
+    background-color: var(--fundo-principal);
 }
 
 .container {
@@ -18,26 +19,12 @@ body {
     
     box-sizing: border-box;
 
-    padding: 1rem;
-}
-
-.container--claro {
-    background-color: var(--branco);
-}
-
-.container--azulclaro {
-    background-color: var(--azulclaro);
-}
-
-.barra {
-    background-color: var(--secundaria1);
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .titulo {
     font-size: var(--tamanho-titulo);
-    font-weight: var(--peso-titulo);
     color: var(--primaria1);
     
     line-height: 2.2rem;
@@ -48,91 +35,154 @@ body {
     margin-bottom: 1.7rem;
 }
 
-.titulo__nav {
+.titulo--pequeno {
+    font-size: var(--tamanho-corpo);
+    font-weight: var(--peso-titulob);
+
+    line-height: 1.2rem;
+}
+
+.titulo__caixa {
     font-size: 1.2rem;
-    color: var(--preto);
+    font-weight: var(--peso-titulob);
+    color: var(--verde);
+    
+    line-height: 1.4rem;
 
-    display: inline;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
 
-    padding-right: .2rem;
+.barra {
+    color: var(--branco);
+    background-color: var(--secundaria1);
+    text-align: center;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.titulo--pequeno {
-    font-size: var(--tamanho-pequeno);
-    font-weight: var(--peso-titulob);
-
-    line-height: 1.2rem;
-}
-
-.titulo--rodape {
-    font-size: 1.5rem;
-    font-weight: var(--peso-titulob);
-}
+/* CONFERIDO ATÉ AQUI */
 
 .texto {
-    line-height: 1.2rem;
-
-    padding-bottom: 1rem;
-}
-
-.texto--pequeno {
-    font-size: .75rem;
-    color: var(--primaria1);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .texto--alto {
     text-transform: uppercase;
 }
 
-.texto--verde {
-    color: var(--verde);
-}
-
-.texto--claro {
-    color: var(--branco);
-}
-
-.texto--escuro {
-    color: var(--preto);
-}
-
-.alinhamento--esquerda {
-    text-align: left;
-}
-
-.alinhamento--direita {
-    text-align: right;
-}
-
-.alinhamento--meio {
+.como-ajudar {
+    background-color: var(--branco);
     text-align: center;
+
+    padding-bottom: 1rem;
 }
 
-.alinhamento--justificado {
-    text-align: justify;
-}
-
-.destaque {
-    padding-top: 5rem;
-}
-
-.personalizacao {
-    color: var(--branco);
-    background-color: var(--primaria1);
-}
-
-.integracao {
+.caixa {
     padding-top: 2rem;
-    padding-bottom: 4rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+}
+
+.campanhas {
+    text-align: left;
+
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+
+    .caixa {
+        padding: 2rem;
+    }
+
+    .como-ajudar {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .como-ajudar__prozza{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+        
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .campanhas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "campanha--integracao-img campanha--integracao"
+        "campanha--planejamento campanha--planejamento-img"
+        "campanha--criacao-img campanha--criacao"
+        "campanha--botao campanha--botao"
+        ;
+        gap: 16px;
+        padding: 3rem;
+        /*grid-column: 2;*/
+    }
+
+    .campanha--integracao-img {
+        grid-area: campanha--integracao-img;
+    }
+    .campanha--integracao {
+        grid-area: campanha--integracao;
+    }
+    .campanha--planejamento-img {
+        grid-area: campanha--planejamento-img;
+    }
+    .campanha--planejamento {
+        grid-area: campanha--planejamento;
+    }
+    .campanha--criacao-img {
+        grid-area: campanha--criacao-img;
+    }
+    .campanha--criacao {
+        grid-area: campanha--criacao;
+    }
+    .campanha--integracao {
+        grid-area: campanha--integracao;
+    }
+    .campanha--botao {
+        grid-area: campanha--botao;
+        max-width: 35vw;
+    }
 }
 
 .clientes {
     padding-top: 2rem;
     padding-bottom: 4rem;
+    text-align: center;
+}
+
+.clientes__declaracao h4 {
+    color: var(--verde);
+    font-size: 1.2rem;
+    font-weight: var(--peso-titulob);
+}
+
+.clientes--cargo {
+    color: var(--primaria1);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .clientes__declaracao {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
 }
 
 footer {

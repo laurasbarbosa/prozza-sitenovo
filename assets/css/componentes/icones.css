@@ -2,30 +2,39 @@
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
 @font-face {
     font-family: 'FontAwesome';
-    src: url("../../font/fa-solid-900.woff2"), url("../../font/fa-brands-400.woff2"), url("../../font/fa-regular-400.woff2");
+    src: url("../../font/fa-solid-900.woff2"), url("../../font/fa-regular-400.woff2");
+}
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    src: url("../../font/fa-brands-400.woff2");
 }
 
 .fa, .fas {
     font-family: 'FontAwesome' !important;
 }
-
 .fab, .far {
-    font-family: 'Font Awesome 5 Brands' !important;
+    font-family: 'Font Awesome 5 Brands';
 }
 
 .icone__menu i::before {
     content: "\f0c9";
     color: var(--primaria1);
-    font-size: 32px;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .icone__menu i::before {
+        display: none;
+    }
 }
 
 .icone__usuario-circle i::before {
     content: "\f2bd";
     color: var(--preto);
     font-size: 24px;
+    margin-right: 1rem;
 }
 
 .icone__tag i::before {
@@ -49,29 +58,34 @@
 .icone__facebook i::before {
     content: "\f39e";
     color: var(--preto);
-    font-size: 64px;
+    font-size: 1.038rem;
+    padding-right: 1rem;
 }
 
 .icone__twitter i::before {
     content: "\f099";
     color: var(--preto);
-    font-size: 64px;
+    font-size: 1.038rem;
+    padding-right: 1rem;
 }
 
 .icone__linkedin i::before {
     content: "\f167";
     color: var(--preto);
-    font-size: 64px;
+    font-size: 1.038rem;
+    padding-right: 1rem;
 }
 
 .icone__youtube i::before {
     content: "\f0e1";
     color: var(--preto);
-    font-size: 64px;
+    font-size: 1.038rem;
+    padding-right: 1rem;
 }
 
 .icone__telefone i::before {
     content: "\f879";
     color: var(--preto);
-    font-size: 64px;
+    font-size: 1.038rem;
+    padding-right: 1rem;
 }

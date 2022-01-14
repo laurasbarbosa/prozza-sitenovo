@@ -1,11 +1,24 @@
 .imagem {
     width: 90vw;
-    max-width: 600px;
+    max-width: 37.5rem;
+    /*width: 90vw; corrigir ainda*/
+    /*max-width: 600px;*/
 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    box-sizing: border-box;
 }
 
+@media screen and (min-width: 1440px) {
+    .imagem {
+        display: inline-block;
+    }
+}
+
+/* CONFERIDO ATÉ AQUI */
+
+/*Imagem logo das ferramentas de integração*/
 .imagem__logo {
     max-width: 350px;
     height: 4rem;
@@ -14,13 +27,14 @@
 }
 
 .imagem__logo--2 {
-    height: 2rem;
-}
-
-.imagem__logo--3 {
     height: 3rem;
 }
 
+.imagem__logo--3 {
+    height: 4rem;
+}
+
+/* Perfil do cliente */
 .imagem__perfil {
     width: 12.75rem;
     height: 12.75rem;

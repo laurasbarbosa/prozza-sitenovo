@@ -1,51 +1,79 @@
 .cabecalho {
-    width: 100vw;
-
-    color: var(--preto);
-    font-size: var(--tamanho-corpo);
-    font-weight: var(--peso-titulob);
+    /*color: var(--preto); /*cor da fonte, testar depois*/
+    /*font-size: var(--tamanho-corpo); /*tamanho da fonte, testar depois*/
+    /*font-weight: var(--peso-titulob); /*peso da fonte, testar depois*/
 
     background-color: var(--branco);
     
     display: flex;
     flex-direction: row;
     align-content: space-around;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
-    
-    box-sizing: border-box;
-
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .cabecalho__logo {
-    height: 5rem;
-    align-self: flex-start;
+    height: 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__logo {
+        height: 5rem;
+    }
+}
+
+.cascata {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    background-color: transparent;
+    color: var(--primaria1);
+    padding: 1rem;
+    border: none;
+    cursor: pointer; /*Faz diferença quando está na versão desktop*/
     display: inline-block;
 }
 
-.cabecalho__navegacao {
+.cascata__conteudo {
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+    right: 0
+}
+
+.cascata:hover .cascata__conteudo {
+    display: block;
+}
+
+.cascata__conteudo--link {
+    font-size: var(--tamanho-corpo);
+    font-weight: 500;
+    text-decoration: none;
     text-align: center;
-    align-self: auto;
-    display: inline-block;
+    color: var(--cinza);
+
+    padding: .5rem;
+
+    display: block;
 }
 
-.cabecalho__link {
-    display: inline-block;
-    /*padding-right: 1rem;*/
+.cascata__conteudo--desktop {
+    display: block;
 }
 
-.cabecalho__link--login {
-    display: inline-block;
-    /*padding-right: 1rem;*/}
+/* CONFERIDO ATÉ AQUI */
 
 @media screen and (max-width: 480px) {
-    /*.cabecalho__navegacao {
-
+    .menu {
+        display: inline-block;
     }
-*/
-	.cabecalho__link--login {
+    .cascata__conteudo--desktop {
         display: none;
     }
 }
