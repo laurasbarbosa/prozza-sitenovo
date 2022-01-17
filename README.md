@@ -56,14 +56,21 @@ Botão:hover
 ```
 
 Menu = `\f0c9`
-Usuário círculo = ``
+
+Usuário círculo = `\f2bd`
 
 Tag = `\f02c`
-Network = ``
-Usuário relógio = ``
+
+Network = `\f6ff`
+
+Usuário relógio = `\f4fd`
 
 facebook = `\f39e`
+
 twitter = `\f099`
-linkedin = `\f0e1`
-youtube = `\f167`
+
+linkedin = `\f167`
+
+youtube = `\f0e1`
+
 telefone = `\f879`
