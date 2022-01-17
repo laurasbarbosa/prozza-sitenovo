@@ -13,10 +13,13 @@ Montserrat:
 ## Cores
 
 (background) Superfícies: `#FCFCFC` - Branco
+
 (background) Cor de fundo principal: `#F1F1F1`
+
 (background) Fundo secundário: `#DEDEDE`
 
 (font) Texto em cor de fundo: `#656565` - Cinza
+
 (font) Texto em superfície: `#1D1D1D` - Preto
 
 Cores primárias:
@@ -30,13 +33,13 @@ Cores secundárias:
 3. 25% `#9AE3B2`
 
 Botão:
-Cor da fonte: superfícies;
-Cor de fundo: secundária 1;
+1. Cor da fonte: superfícies;
+2. Cor de fundo: secundária 1;
 
 Botão:hover
-Cor da fonte: superfícies;
-Cor de fundo: secundária 2;
-Transição: 3s
+1. Cor da fonte: superfícies;
+2. Cor de fundo: secundária 2;
+3. Transição: 3s
 
 
 ## Ícones
@@ -51,28 +54,16 @@ Transição: 3s
     src: url("../../font/fa-brands-400.woff2");
 }
 ```
-Ícones:
 
 Menu = `\f0c9`
-Tag = `\f02c`
+Usuário círculo = ``
 
-network-wired 
+Tag = `\f02c`
+Network = ``
+Usuário relógio = ``
 
 facebook = `\f39e`
 twitter = `\f099`
 linkedin = `\f0e1`
 youtube = `\f167`
-Phone = `\f879`
-
-## Espaçamentos
-
-Espaço interno botão: `8px`
-Espaço entre elementos do botão: `8px`
-Espaço entre elementos: `16px/8px`
-Espaçamento interno do corpo: `16px`
-Espaçamento entre o título do cartão de recentes e seus itens: `24px`
-
-## Tamanhos
-
-Tamanho do dispositivo mobile: `360px`
-Tamanho do dispositivo desktop: `1440px`
+telefone = `\f879`
