@@ -1,0 +1,112 @@
+@import url(componentes/_destaque.css);
+@import url(componentes/_vem-de-prozza.css);
+@import url(componentes/_personalizacao.css);
+@import url(componentes/_integracao.css);
+@import url(componentes/_personalizacao.css);
+
+.como-ajudar {
+    background-color: var(--branco);
+    text-align: center;
+
+    padding-bottom: 1rem;
+}
+
+.barra {
+    color: var(--branco);
+    background-color: var(--secundaria1);
+    text-align: center;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.campanhas {
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .como-ajudar {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .como-ajudar__prozza{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+        justify-content: space-around;
+        
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .campanhas {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "campanha--integracao-img campanha--integracao"
+        "campanha--planejamento campanha--planejamento-img"
+        "campanha--criacao-img campanha--criacao"
+        "campanha--botao campanha--botao"
+        ;
+        column-gap: 1rem;
+        padding: 3rem;
+    }
+
+    .campanha--integracao-img {
+        grid-area: campanha--integracao-img;
+    }
+    .campanha--integracao {
+        grid-area: campanha--integracao;
+    }
+
+    .campanha--planejamento-img {
+        grid-area: campanha--planejamento-img;
+    }
+    .campanha--planejamento {
+        grid-area: campanha--planejamento;
+    }
+
+    .campanha--criacao-img {
+        grid-area: campanha--criacao-img;
+    }
+    .campanha--criacao {
+        grid-area: campanha--criacao;
+    }
+
+    .campanha--botao {
+        grid-area: campanha--botao;
+    }
+}
+
+.clientes {
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.clientes__declaracao h4 {
+    color: var(--verde);
+    font-size: 1.2rem;
+    font-weight: var(--peso-titulob);
+}
+
+.clientes--cargo {
+    font-size: .7rem;
+    color: var(--primaria1);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .clientes__declaracao {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+}

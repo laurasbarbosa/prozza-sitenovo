@@ -17,27 +17,55 @@
     height: 4rem;
 }
 
-@media screen and (min-width: 1440px) {
-    .cabecalho__logo {
-        height: 5rem;
-    }
+.menu {
+    transition: 3s;
+    display: inline-block;
+    cursor: pointer; /*Faz diferença quando está na versão desktop*/
+
+    margin-right: -100%;
+    padding: 1rem;
 }
 
-.cascata {
-    position: relative;
-}
-
+/*
 .menu {
     display: none;
     background-color: transparent;
     color: var(--primaria1);
     padding: 1rem;
     border: none;
-    cursor: pointer; /*Faz diferença quando está na versão desktop*/
+    cursor: pointer; /*Faz diferença quando está na versão desktop
     display: inline-block;
 }
+*/
 
-.cascata__conteudo {
+#menu--ck {
+    display: none;
+}
+
+#menu--ck:checked ~ .menu {
+    margin-right: 0;
+
+}
+
+label[for="menu--ck"]{
+    padding: 5px;
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        width: 100px; /*conferir*/
+        float: none;
+    }/*
+    .menu {
+        display: inline-block;
+    }*/
+    label[for="menu--ck"]{
+        display: none;
+    }
+}
+
+.menu__conteudo {
     display: none;
     position: absolute;
     background-color: var(--branco);
@@ -47,11 +75,11 @@
     right: 0
 }
 
-.cascata:hover .cascata__conteudo {
+.menu:hover .menu__conteudo {
     display: block;
 }
 
-.cascata__conteudo--link {
+.menu__conteudo--link {
     font-size: var(--tamanho-corpo);
     font-weight: 500;
     text-decoration: none;
@@ -63,17 +91,8 @@
     display: block;
 }
 
-.cascata__conteudo--desktop {
-    display: block;
-}
+/* CONFERIR */
 
-/* CONFERIDO ATÉ AQUI */
-
-@media screen and (max-width: 480px) {
-    .menu {
-        display: inline-block;
-    }
-    .cascata__conteudo--desktop {
-        display: none;
-    }
+.cascata {
+    position: relative;
 }

@@ -4,8 +4,9 @@
 body {
     font-family: var(--familia);
     font-size: var(--tamanho-corpo);
+    text-align: left;
     color: var(--cinza);
-    line-height: 1.2rem;
+    line-height: 1rem;
 
     background-color: var(--fundo-principal);
 }
@@ -23,46 +24,39 @@ body {
     padding-left: 1rem;
 }
 
+.caixa {
+    padding-top: 2rem;
+}
+
 .titulo {
     font-size: var(--tamanho-titulo);
     color: var(--primaria1);
     
-    line-height: 2.2rem;
+    line-height: 2.4rem;
 
     display: block;
 
-    margin-top: 1.7rem;
-    margin-bottom: 1.7rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
 }
 
 .titulo--pequeno {
     font-size: var(--tamanho-corpo);
     font-weight: var(--peso-titulob);
 
-    line-height: 1.2rem;
-}
-
-.titulo__caixa {
-    font-size: 1.2rem;
-    font-weight: var(--peso-titulob);
-    color: var(--verde);
-    
     line-height: 1.4rem;
 
-    margin-top: 1.5rem;
-    margin-bottom: .5rem;
+    display: block;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.barra {
-    color: var(--branco);
-    background-color: var(--secundaria1);
-    text-align: center;
+.titulo--caixa {
+    color: var(--verde);
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
-
-/* CONFERIDO ATÉ AQUI */
 
 .texto {
     padding-top: 1.5rem;
@@ -73,121 +67,29 @@ body {
     text-transform: uppercase;
 }
 
-.como-ajudar {
-    background-color: var(--branco);
-    text-align: center;
+@media screen and (min-width: 1024px) {
+    body {
+        line-height: 1.2rem;
+    }
 
-    padding-bottom: 1rem;
-}
-
-.caixa {
-    padding-top: 2rem;
-}
-
-.campanhas {
-    text-align: left;
-
-    padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 1440px) {
     .container {
-        padding-right: 8rem;
-        padding-left: 8rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
     }
-
+    
     .caixa {
-        padding: 2rem;
-    }
-
-    .como-ajudar {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .como-ajudar__prozza{
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-        justify-content: space-between;
-        
-        padding-top: 3rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .campanhas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "campanha--integracao-img campanha--integracao"
-        "campanha--planejamento campanha--planejamento-img"
-        "campanha--criacao-img campanha--criacao"
-        "campanha--botao campanha--botao"
-        ;
-        gap: 16px;
-        padding: 3rem;
-        /*grid-column: 2;*/
-    }
-
-    .campanha--integracao-img {
-        grid-area: campanha--integracao-img;
-    }
-    .campanha--integracao {
-        grid-area: campanha--integracao;
-    }
-    .campanha--planejamento-img {
-        grid-area: campanha--planejamento-img;
-    }
-    .campanha--planejamento {
-        grid-area: campanha--planejamento;
-    }
-    .campanha--criacao-img {
-        grid-area: campanha--criacao-img;
-    }
-    .campanha--criacao {
-        grid-area: campanha--criacao;
-    }
-    .campanha--integracao {
-        grid-area: campanha--integracao;
-    }
-    .campanha--botao {
-        grid-area: campanha--botao;
-        max-width: 35vw;
-    }
-}
-
-.clientes {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    text-align: center;
-}
-
-.clientes__declaracao h4 {
-    color: var(--verde);
-    font-size: 1.2rem;
-    font-weight: var(--peso-titulob);
-}
-
-.clientes--cargo {
-    color: var(--primaria1);
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-@media screen and (min-width: 1440px) {
-    .clientes__declaracao {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-
-        justify-content: space-between;
-        padding-top: 1rem;
+        max-width: 40vw;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
 footer {
-    font-family: var(--familia);
-    font-size: var(--tamanho-corpo);
-    
+    font-size: var(--tamanho-corpo-rodape);
+    text-align: justify;
     background-color: var(--fundo-secundario);
+    
+    line-height: 1rem;
+    
+    padding-top: 5rem;
 }

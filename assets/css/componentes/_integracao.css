@@ -1,0 +1,22 @@
+.integracao {
+    text-align: center;
+    background-color: var(--branco);
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.integracao p {
+    text-align: justify;
+}
+
+.integracao--imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+}

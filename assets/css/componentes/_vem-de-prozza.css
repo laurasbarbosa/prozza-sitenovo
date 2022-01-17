@@ -1,0 +1,34 @@
+.vem-de-prozza {
+    background-color: var(--azulclaro);
+
+    padding-bottom: 2rem;
+}
+
+.vem-de-prozza__imagem {
+    width:100%;
+    position:relative;
+    top:-3.75rem;
+    max-width:43.75rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .vem-de-prozza {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "vem-de-prozza__conteudo vem-de-prozza__imagem"
+        ;
+        gap: 16px;
+    }
+
+    .vem-de-prozza__imagem {
+        grid-area: vem-de-prozza__imagem;
+    }
+
+    .vem-de-prozza__conteudo {
+        grid-area: vem-de-prozza__conteudo;
+        text-align: left;
+
+        padding-right: 2rem;
+    }
+}

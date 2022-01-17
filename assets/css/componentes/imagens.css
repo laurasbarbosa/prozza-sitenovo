@@ -1,19 +1,10 @@
 .imagem {
-    width: 90vw;
-    max-width: 37.5rem;
-    /*width: 90vw; corrigir ainda*/
-    /*max-width: 600px;*/
-
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
-    box-sizing: border-box;
 }
 
-@media screen and (min-width: 1440px) {
-    .imagem {
-        display: inline-block;
-    }
+@media screen and (min-width: 1024px) {
 }
 
 /* CONFERIDO ATÉ AQUI */
@@ -23,7 +14,8 @@
     max-width: 350px;
     height: 4rem;
     padding: 1rem 0.75rem;
-    box-sizing: border-box
+
+    box-sizing: border-box;
 }
 
 .imagem__logo--2 {
@@ -32,6 +24,9 @@
 
 .imagem__logo--3 {
     height: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
 }
 
 /* Perfil do cliente */

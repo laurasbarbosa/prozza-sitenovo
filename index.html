@@ -8,15 +8,12 @@
     <title>Home | prozza.co</title>
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
     <link rel="stylesheet" href="assets/css/componentes/icones.css">
     <link rel="stylesheet" href="assets/css/componentes/imagens.css">
-
-    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
-    <link rel="stylesheet" href="assets/css/componentes/destaque.css">
-    <link rel="stylesheet" href="assets/css/componentes/vem-de-prozza.css">
-    <link rel="stylesheet" href="assets/css/componentes/personalizacao.css">
-    <link rel="stylesheet" href="assets/css/componentes/integracao.css">
     <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+
+    <link rel="stylesheet" href="assets/css/estilo-home.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,16 +24,16 @@
     <header class="container cabecalho">
         <h1><img src="assets/img/logo/logo-prozza.png" alt="Logo do Prozza" class="cabecalho__logo"></h1>
         <div class="cascata">
+            <span class="fa icone__menu" aria-label="Ícone de menu"><i></i></span>
             <nav class="menu">
-                <span class="fa icone__menu" aria-label="Ícone de menu"><i></i></span>
-                <ul class="cascata__conteudo">
-                    <li class="cascata__conteudo--link"><a href="index.html">Home</a></li>
-                    <li class="cascata__conteudo--link"><a href="#">O que é Prozza?</a></li>
-                    <li class="cascata__conteudo--link"><a href="#">Personalização</a></li>
-                    <li class="cascata__conteudo--link"><a href="#">Integração</a></li>
-                    <li class="cascata__conteudo--link"><a href="planos.html">Planos</a></li>
-                    <li class="cascata__conteudo--link cascata__conteudo--desktop"><button class="botao"><a href="planos.html">Cadastre-se</a></button></li>
-                    <li class="cascata__conteudo--link cascata__conteudo--desktop fa icone__usuario-circle"><a href="app/" aria-label="Ícone de usuário"><i></i>Login</a></li>
+                <ul class="menu__conteudo">
+                    <li class="menu__conteudo--link"><a href="index.html">Home</a></li>
+                    <li class="menu__conteudo--link"><a href="#">O que é Prozza?</a></li>
+                    <li class="menu__conteudo--link"><a href="#">Personalização</a></li>
+                    <li class="menu__conteudo--link"><a href="#">Integração</a></li>
+                    <li class="menu__conteudo--link"><a href="planos.html">Planos</a></li>
+                    <!--<li class="cascata__conteudo--link cascata__conteudo--desktop"><button class="botao"><a href="planos.html">Cadastre-se</a></button></li>
+                    <li class="cascata__conteudo--link cascata__conteudo--desktop fa icone__usuario-circle"><a href="app/" aria-label="Ícone de usuário"><i></i>Login</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -45,7 +42,7 @@
         <!-- DESTAQUE - O QUE É PROZZA? -->
         <section class="container destaque">
             <div class="destaque__imagem">
-                <img src="assets/img/edits/cel-angulos.png" alt="Dois celulares" class="imagem">
+                <img src="assets/img/edits/cel-angulos.gif" alt="Dois celulares" class="caixa imagem">
             </div>
             <div class="destaque__conteudo">
                 <h2 class="titulo">Recupere suas vendas e aumente o seu faturamento com o Prozza</h2>
@@ -59,24 +56,26 @@
             <article class="como-ajudar__prozza">
                 <div class="caixa">
                     <span class="fa icone__tag" aria-label="Ícone de uma tag"><i></i></span>
-                    <h4 class="titulo__caixa">Recupere suas vendas de maneira automática</h4>
+                    <h4 class="titulo--pequeno titulo--caixa">Recupere suas vendas de maneira automática</h4>
                     <p class="texto">Com o prozza você pode aumentar suas converções em vendas, afiliação e divulgação de links exclusivos.</p>
                 </div>
                 <div class="caixa">
                     <span class="fa icone__network" aria-label="Ícone de uma rede hierarquia organizacional"><i></i></span>
-                    <h4 class="titulo__caixa">Integrado com as principais plataformas</h4>
+                    <h4 class="titulo--pequeno titulo--caixa">Integrado com as principais plataformas</h4>
                     <p class="texto">Através da nossa integração simplificada, crie campanhas inteligentes e automáticas.</p>
                 </div>
                 <div class="caixa">
                     <span class="fa icone__usuario-relogio" aria-label="Ícone de um usuário com um relógio ao lado"><i></i></span>
-                    <h4 class="titulo__caixa">Otimização de tempo e fluxos de trabalho</h4>
+                    <h4 class="titulo--pequeno titulo--caixa">Otimização de tempo e fluxos de trabalho</h4>
                     <p class="texto">Facilitando o aproveiramento dos seus leads de maneira automatizada, o Prozza vai ajudar você a conquistar mais clientes.</p>
                 </div>
             </article>
         </section>
         <!---------------------->
         <section class="container vem-de-prozza">
-            <img src="assets/img/edits/laptop+cel.png" alt="Laptop e iphone" class="vem-de-prozza__imagem imagem">
+            <div class="imagem vem-de-prozza__imagem">
+                <img src="assets/img/edits/laptop+cel.png" alt="Laptop e iphone" class="caixa imagem">
+            </div>
             <div class="vem-de-prozza__conteudo">
                 <h2 class="titulo">Revolucione a comunicação com seus Leads #VemdeProzza</h2>
                 <p class="texto">O Prozza te ajuda a otimizar suas conversões por meio de ações personalizadas via ligação ou sms. Você pode criar estratégias diferentes para diferentes produtos e campanhas. Impulsione a ação em qualquer estágio do funil de marketing de conscientização, conversão ou retenção de clientes.</p>
@@ -93,18 +92,26 @@
                 <h2 class="titulo">Integração</h2>
                 <p class="texto">Faça a integração entre o Prozza e sua plataforma de vendas de maneira simplificada e ágil.</p>
             </div>
-            <img  class="caixa campanha--integracao-img imagem" src="assets/img/edits/integracao.png" alt="Desenho de duas pessoas conectando uma tomada">
+            <div class="caixa campanha--integracao-img">
+                <img  class="imagem imagem--campanha" src="assets/img/edits/integracao.png" alt="Desenho de duas pessoas conectando uma tomada">
+            </div>
             <div class="caixa campanha--planejamento">
                 <h2 class="titulo">Planejamento &amp; Estratégia</h2>
                 <p class="texto">Aplique sua própria estratégia de marketing com o Prozza e diversifique para cada tipo de produto, status e formas de pagamento</p>
             </div>
-            <img  class="caixa campanha--planejamento-img imagem" src="assets/img/edits/conexoes.png" alt="Desenho de uma pessoa envolta por linhas de conexões imagem">
+            <div class="caixa campanha--planejamento-img">
+                <img  class="imagem imagem--campanha" src="assets/img/edits/conexoes.png" alt="Desenho de uma pessoa envolta por linhas de conexões imagem">
+            </div>
             <div class="caixa campanha--criacao">
                 <h2 class="titulo">Criação e campanhas</h2>
                 <p class="texto">Crie campanhas personalizadas de SMS e Ligação com as estratégias definidas anteriormente. Ative e automatize a recuperação de suas vendas trabalhando melhor seus leads.</p>
             </div>
-            <img class="caixa campanha--criacao-img imagem" src="assets/img/edits/reuniao-online.png" alt="Desenho de uma pessoa em uma reunião online imagem">
-            <button class="caixa campanha--botao botao">Comece agora a recuperar leads</button>
+            <div class="caixa campanha--criacao-img">
+                <img class="imagem imagem--campanha" src="assets/img/edits/reuniao-online.png" alt="Desenho de uma pessoa em uma reunião online imagem">
+            </div>
+            <div class="caixa campanha--botao">
+                <button class="botao">Comece agora a recuperar leads</button>
+            </div>
         </section>
         <!--PERSONALIZAÇÃO-->
         <section class="container personalizacao">
@@ -113,7 +120,7 @@
                 <h5 class="titulo">Personalize uma ação para cada tipo de conversão para cada tipo de cliente e produto.</h5>
                 <p class="texto">Personalize uma ação para cada conversão, com código de área e diversas personalizações como short links tageados</p>
             </div>
-            <img src="assets/img/edits/cel2.png" alt="Dois celulares" class="personalizacao__imagem imagem">
+            <img src="assets/img/edits/cel2.gif" alt="Dois celulares" class="personalizacao__imagem caixa imagem">
         </section>
         <!---------------------->
         <section class="container personalizacao2">
@@ -164,40 +171,42 @@
             </article>
         </section>
     </main>
+    <!-- RODAPÉ -->
     <footer class="container rodape">
-        <div>
-            <h2 class="titulo titulo--rodape">Prozza</h2>
-            <p class="texto">Aumente suas conversões com Prozza. Você vai ter a possibilidade de desenvolver o melhor tipo de anúncio para trabalhar com as ideias que sua marca gostaria de passar.</p>
-            <div class="medias-sociais">
-                <span class="fab icone__facebook" aria-label="Ícone do Facebook"><i></i></span>
-                <span class="fab icone__twitter" aria-label="Ícone do Twitter"><i></i></span>
-                <span class="fab icone__linkedin" aria-label="Ícone do Linkedin"><i></i></span>
-                <span class="fab icone__youtube" aria-label="Ícone do YouTube"><i></i></span>
-                <span class="fas icone__telefone" aria-label="Ícone de um Telefone"><i></i></span>
+        <div class="rodape__principal">
+            <div class="rodape__conteudo">
+                <h2 class="titulo titulo--rodape">Prozza</h2>
+                <p class="texto">Aumente suas conversões com Prozza. Você vai ter a possibilidade de desenvolver o melhor tipo de anúncio para trabalhar com as ideias que sua marca gostaria de passar.</p>
+                <div class="midias-sociais">
+                    <span class="fab icone__facebook" aria-label="Ícone do Facebook"><i></i></span>
+                    <span class="fab icone__twitter" aria-label="Ícone do Twitter"><i></i></span>
+                    <span class="fab icone__linkedin" aria-label="Ícone do Linkedin"><i></i></span>
+                    <span class="fab icone__youtube" aria-label="Ícone do YouTube"><i></i></span>
+                    <span class="fas icone__telefone" aria-label="Ícone de um Telefone"><i></i></span>
+                </div>
             </div>
+            <nav class="rodape__nav">
+                <div>
+                    <h3 class="titulo--nav">Links</h3>
+                    <ul>
+                        <li><a href="">O que é Prozza?</a></li>
+                        <li><a href="">Personalização</a></li>
+                        <li><a href="">Integrações</a></li>
+                        <li><a href="">Planos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="titulo--nav">Suporte</h3>
+                    <ul>
+                        <li><a href="">Ajuda &amp; Suporte</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="rodape__nav">
-            <div>
-                <h3 class="">Links</h3>
-                <ul>
-                    <li class="texto"><a href="">O que é Prozza?</a></li>
-                    <li class="texto"><a href="">Personalização</a></li>
-                    <li class="texto"><a href="">Integrações</a></li>
-                    <li class="texto"><a href="">Planos</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="">Suporte</h3>
-                <ul>
-                    <li class="texto"><a href="">Ajuda &amp; Suporte</a></li>
-                    <li class="texto"><a href="">Política de privacidade</a></li>
-                    <li class="texto"><a href="">FAQ</a></li>
-                    
-                </ul>
-            </div>
-        </nav>
         <div class="rodape__escuro">
-            <p class="texto">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por Kavicki</p>
+            <p class="texto--copy">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por Kavicki</p>
         </div>
     </footer>
 </body>
