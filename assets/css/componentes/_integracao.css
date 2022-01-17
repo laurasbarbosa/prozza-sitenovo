@@ -19,4 +19,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .integracao--imgs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 1rem;
+        align-self: center;
+        justify-content: space-evenly;
+    }
 }
