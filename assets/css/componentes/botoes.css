@@ -6,9 +6,6 @@
     font-family: inherit;
     color: var(--branco);
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
     display: block;
 
     padding-top: .75rem;
@@ -26,4 +23,12 @@
     opacity: 1;
 
     cursor: pointer;
+}
+
+.botao--menu {
+    font-size: .6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }

@@ -24,7 +24,7 @@
     padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .como-ajudar {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -34,7 +34,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: flex-start;
-        justify-content: space-around;
         
         padding-top: 3rem;
         padding-bottom: 1.5rem;
@@ -77,6 +76,7 @@
 
     .campanha--botao {
         grid-area: campanha--botao;
+        justify-self: center;
     }
 }
 
@@ -100,7 +100,7 @@
     padding-bottom: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .clientes__declaracao {
         display: flex;
         flex-direction: row;

@@ -5,13 +5,13 @@
 }
 
 .vem-de-prozza__imagem {
-    width:100%;
-    position:relative;
+    width: 100%;
+    position: relative;
     top:-3.75rem;
     max-width:43.75rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .vem-de-prozza {
         display: grid;
         grid-template-columns: 1fr 1fr;

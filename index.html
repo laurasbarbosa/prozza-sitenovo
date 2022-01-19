@@ -22,20 +22,25 @@
 <body>
     <!-- HEADER > NAVEGAÇÃO -->
     <header class="container cabecalho">
-        <h1><img src="assets/img/logo/logo-prozza.png" alt="Logo do Prozza" class="cabecalho__logo"></h1>
-        <div class="cascata">
-            <span class="fa icone__menu" aria-label="Ícone de menu"><i></i></span>
-            <nav class="menu">
-                <ul class="menu__conteudo">
-                    <li class="menu__conteudo--link"><a href="index.html">Home</a></li>
-                    <li class="menu__conteudo--link"><a href="#">O que é Prozza?</a></li>
-                    <li class="menu__conteudo--link"><a href="#">Personalização</a></li>
-                    <li class="menu__conteudo--link"><a href="#">Integração</a></li>
-                    <li class="menu__conteudo--link"><a href="planos.html">Planos</a></li>
-                    <!--<li class="cascata__conteudo--link cascata__conteudo--desktop"><button class="botao"><a href="planos.html">Cadastre-se</a></button></li>
-                    <li class="cascata__conteudo--link cascata__conteudo--desktop fa icone__usuario-circle"><a href="app/" aria-label="Ícone de usuário"><i></i>Login</a></li>-->
-                </ul>
-            </nav>
+        <div>
+            <h1><img src="assets/img/logo/logo-prozza.png" alt="Logo do Prozza" class="cabecalho__logo"></h1>
+        </div>
+        <div class="menu">
+            <label for="drop" class="toggle fa icone__menu"><i></i></label>
+            <input type="checkbox" id="drop" />
+
+            <ul class="menu__conteudo">
+                <li class="menu__conteudo--link"><a href="#destaque">O que é Prozza?</a></li>
+                <li class="menu__conteudo--link"><a href="#personalizacao">Personalização</a></li>
+                <li class="menu__conteudo--link"><a href="#integracao">Integração</a></li>
+                <li class="menu__conteudo--link"><a href="planos.html">Planos</a></li>
+                <li class="menu__conteudo--link menu__conteudo--desktop">
+                    <button class="botao botao--menu"><a href="planos.html">Cadastre-se</a></button>
+                </li>
+                <li class="menu__conteudo--link">
+                    <a href="https://prozza.co/app/index.php" aria-label="Ícone de usuário" class="fa icone__usuario-circle"><i></i>Login</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -73,8 +78,8 @@
         </section>
         <!---------------------->
         <section class="container vem-de-prozza">
-            <div class="imagem vem-de-prozza__imagem">
-                <img src="assets/img/edits/laptop+cel.png" alt="Laptop e iphone" class="caixa imagem">
+            <div class="vem-de-prozza__imagem">
+                <img src="assets/img/edits/laptop+cel.gif" alt="Laptop e iphone" class="caixa imagem">
             </div>
             <div class="vem-de-prozza__conteudo">
                 <h2 class="titulo">Revolucione a comunicação com seus Leads #VemdeProzza</h2>
@@ -189,25 +194,26 @@
                 <div>
                     <h3 class="titulo--nav">Links</h3>
                     <ul>
-                        <li><a href="">O que é Prozza?</a></li>
-                        <li><a href="">Personalização</a></li>
-                        <li><a href="">Integrações</a></li>
-                        <li><a href="">Planos</a></li>
+                        <li><a href="#destaque">O que é Prozza?</a></li>
+                        <li><a href="#personalizacao">Personalização</a></li>
+                        <li><a href="#integracao">Integrações</a></li>
+                        <li><a href="planos.html">Planos</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="titulo--nav">Suporte</h3>
                     <ul>
-                        <li><a href="">Ajuda &amp; Suporte</a></li>
+                        <li><a href="https://ajuda.prozza.co">Ajuda &amp; Suporte</a></li>
                         <li><a href="">Política de privacidade</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="https://ajuda.prozza.co/category/30-faq">FAQ</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
         <div class="rodape__escuro">
-            <p class="texto--copy">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por Kavicki</p>
+            <p class="texto--copy">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por <a href="https://kavicki.com/">Kavicki</a></p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

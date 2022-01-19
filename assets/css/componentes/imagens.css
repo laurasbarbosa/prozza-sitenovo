@@ -4,11 +4,6 @@
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-}
-
-/* CONFERIDO ATÉ AQUI */
-
 /*Imagem logo das ferramentas de integração*/
 .imagem__logo {
     max-width: 350px;
@@ -24,9 +19,6 @@
 
 .imagem__logo--3 {
     height: 4rem;
-}
-
-@media screen and (min-width: 1024px) {
 }
 
 /* Perfil do cliente */

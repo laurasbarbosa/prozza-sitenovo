@@ -3,7 +3,7 @@
     padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .destaque {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
