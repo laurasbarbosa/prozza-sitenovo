@@ -29,7 +29,5 @@
 }
 
 @media screen and (min-width: 1024px) {
-    :root {
-        --tamanho-corpo: 1rem;
-    }
+    :root { --tamanho-corpo: 1rem; }
 }

@@ -24,9 +24,7 @@ body {
     padding-left: 1rem;
 }
 
-.caixa {
-    padding-top: 2rem;
-}
+.caixa { padding-top: 2rem; }
 
 .titulo {
     font-size: var(--tamanho-titulo);
@@ -63,14 +61,10 @@ body {
     padding-bottom: 1.5rem;
 }
 
-.texto--alto {
-    text-transform: uppercase;
-}
+.texto--alto { text-transform: uppercase; }
 
 @media screen and (min-width: 1024px) {
-    body {
-        line-height: 1.2rem;
-    }
+    body { line-height: 1.2rem; }
 
     .container {
         padding-right: 3rem;

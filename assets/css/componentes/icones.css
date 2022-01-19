@@ -11,12 +11,8 @@
     src: url("../../font/fa-brands-400.woff2");
 }
 
-.fa, .fas {
-    font-family: 'FontAwesome' !important;
-}
-.fab, .far {
-    font-family: 'Font Awesome 5 Brands';
-}
+.fa, .fas { font-family: 'FontAwesome' !important; }
+.fab, .far { font-family: 'Font Awesome 5 Brands'; }
 
 .icone__menu i::before {
     content: "\f0c9";
@@ -25,9 +21,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .icone__menu i::before {
-        display: none;
-    }
+    .icone__menu i::before { display: none; }
 }
 
 .icone__usuario-circle i::before {

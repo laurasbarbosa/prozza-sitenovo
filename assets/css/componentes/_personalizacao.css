@@ -24,12 +24,8 @@
         ;
         gap: 16px;
     }
-    .personalizacao__conteudo {
-        grid-area: personalizacao__conteudo;
-    }
-    .personalizacao__imagem {
-        grid-area: personalizacao__imagem;
-    }
+    .personalizacao__conteudo { grid-area: personalizacao__conteudo; }
+    .personalizacao__imagem { grid-area: personalizacao__imagem; }
 }
 
 .personalizacao2 {

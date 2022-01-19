@@ -4,6 +4,7 @@
 @import url(componentes/_integracao.css);
 @import url(componentes/_personalizacao.css);
 
+/* como o prozza pode te ajudar? */
 .como-ajudar {
     background-color: var(--branco);
     text-align: center;
@@ -11,6 +12,7 @@
     padding-bottom: 1rem;
 }
 
+/* barra verde */
 .barra {
     color: var(--branco);
     background-color: var(--secundaria1);
@@ -20,11 +22,10 @@
     padding-bottom: 1rem;
 }
 
-.campanhas {
-    padding-bottom: 2rem;
-}
+.campanhas { padding-bottom: 2rem; }
 
 @media screen and (min-width: 768px) {
+    /* como o prozza pode te ajudar? */
     .como-ajudar {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -39,6 +40,7 @@
         padding-bottom: 1.5rem;
     }
 
+    /* organização do grid de campanhas */
     .campanhas {
         width: 100vw;
         display: grid;
@@ -52,27 +54,14 @@
         column-gap: 1rem;
         padding: 3rem;
     }
+    .campanha--integracao-img { grid-area: campanha--integracao-img; }
+    .campanha--integracao { grid-area: campanha--integracao; }
 
-    .campanha--integracao-img {
-        grid-area: campanha--integracao-img;
-    }
-    .campanha--integracao {
-        grid-area: campanha--integracao;
-    }
+    .campanha--planejamento-img { grid-area: campanha--planejamento-img; }
+    .campanha--planejamento { grid-area: campanha--planejamento; }
 
-    .campanha--planejamento-img {
-        grid-area: campanha--planejamento-img;
-    }
-    .campanha--planejamento {
-        grid-area: campanha--planejamento;
-    }
-
-    .campanha--criacao-img {
-        grid-area: campanha--criacao-img;
-    }
-    .campanha--criacao {
-        grid-area: campanha--criacao;
-    }
+    .campanha--criacao-img { grid-area: campanha--criacao-img; }
+    .campanha--criacao { grid-area: campanha--criacao; }
 
     .campanha--botao {
         grid-area: campanha--botao;
@@ -80,6 +69,7 @@
     }
 }
 
+/*sessão de clientes*/
 .clientes {
     text-align: center;
 

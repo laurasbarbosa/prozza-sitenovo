@@ -13,13 +13,9 @@
     box-sizing: border-box;
 }
 
-.imagem__logo--2 {
-    height: 3rem;
-}
+.imagem__logo--2 { height: 3rem; }
 
-.imagem__logo--3 {
-    height: 4rem;
-}
+.imagem__logo--3 { height: 4rem; }
 
 /* Perfil do cliente */
 .imagem__perfil {

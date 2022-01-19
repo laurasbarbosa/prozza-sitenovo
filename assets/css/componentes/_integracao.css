@@ -6,9 +6,7 @@
     padding-bottom: 4rem;
 }
 
-.integracao p {
-    text-align: justify;
-}
+.integracao p { text-align: justify; }
 
 .integracao--imgs {
     display: flex;
