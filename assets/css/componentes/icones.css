@@ -20,15 +20,23 @@
     font-size: 30px;
 }
 
-@media screen and (min-width: 1024px) {
-    .icone__menu i::before { display: none; }
+.icone__menu {
+    border: none;
+    background-color: var(--branco);
+    padding: 1rem;
+    cursor: pointer;
 }
 
-.icone__usuario-circle i::before {
+@media screen and (min-width: 1440px) {
+    .icone__menu { display: none; }
+}
+
+.icone__usuario-circle::before {
+    font-family: 'FontAwesome' !important;
     content: "\f2bd";
     color: var(--preto);
     font-size: 24px;
-    margin-right: 1rem;
+    padding-right: .5rem;
 }
 
 .icone__tag i::before {

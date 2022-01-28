@@ -22,26 +22,18 @@
 <body>
     <!-- HEADER > NAVEGAÇÃO -->
     <header class="container cabecalho">
-        <div>
-            <h1><img src="assets/img/logo/logo-prozza.png" alt="Logo do Prozza" class="cabecalho__logo"></h1>
-        </div>
-        <div class="menu">
-            <label for="drop" class="toggle fa icone__menu"><i></i></label>
-            <input type="checkbox" id="drop" />
-
-            <ul class="menu__conteudo">
-                <li class="menu__conteudo--link"><a href="#destaque">O que é Prozza?</a></li>
-                <li class="menu__conteudo--link"><a href="#personalizacao">Personalização</a></li>
-                <li class="menu__conteudo--link"><a href="#integracao">Integração</a></li>
-                <li class="menu__conteudo--link"><a href="planos.html">Planos</a></li>
-                <li class="menu__conteudo--link menu__conteudo--desktop">
-                    <button class="botao botao--menu"><a href="planos.html">Cadastre-se</a></button>
-                </li>
-                <li class="menu__conteudo--link">
-                    <a href="https://prozza.co/app/index.php" aria-label="Ícone de usuário" class="fa icone__usuario-circle"><i></i>Login</a>
-                </li>
-            </ul>
-        </div>
+        <img src="assets/img/logo/logo-prozza.png" alt="Logotipo do Prozza" class="cabecalho__logo">
+        <button class="fa icone__menu" aria-label="Menu"><i></i></button>
+        <nav class="menu-lateral">
+            <a class="menu-lateral--link" href="#destaque">O que é Prozza?</a>
+            <a class="menu-lateral--link" href="#personalizacao">Personalização</a>
+            <a class="menu-lateral--link" href="#integracao">Integração</a>
+            <a class="menu-lateral--link" href="planos.html">Planos</a>
+            <a class="menu-lateral__login--link" href="planos.html">
+                <button class="botao botao--menu">Cadastre-se</button>
+            </a>
+            <a class="menu-lateral__login--link icone__usuario-circle" href="https://prozza.co/app/index.php" aria-label="Ícone de usuário">Login</a>
+        </nav>
     </header>
     <main>
         <!-- DESTAQUE - O QUE É PROZZA? -->
@@ -214,6 +206,6 @@
             <p class="texto--copy">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por <a href="https://kavicki.com/">Kavicki</a></p>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

@@ -1,94 +1,74 @@
 .cabecalho {
-    color: var(--preto);
-    font-size: var(--tamanho-corpo);
-
-    background-color: var(--branco);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
 }
 
-.cabecalho__logo {
-    height: 4rem;
-    order: 1;
-}
+.cabecalho__logo { height: 4rem; }
 
-.menu {
-    background-color: var(--branco);
-    order: 3;
-}
-
-.toggle {
-    order: 2;
-    float: right;
-    padding: 1rem;
-    font-size: 1rem;
-}
-
-.menu__conteudo {
-	float: right;
-}
-
-[id=drop]:checked ~ .menu__conteudo {
-    display: block;
-}
-
-.menu__conteudo--link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #fff;
-    color: #222;
-	font-size: .8rem;
-    /*width: 150px;*/
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-}
-
-.toggle + .menu__conteudo--link,
-.menu__conteudo {
-	display: none;
-}
-
-.menu__conteudo--desktop {
+.menu-lateral {
     display: none;
+    float: right;
+    font-size: var(--tamanho-corpo);
+    text-align: center;
+    color: var(--preto);
+    background-color: var(--branco);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+
+    width: 150px;
+    right: -100vw;
+    top: 11.5vh;
+    
+    padding: .5rem;
+    position: absolute;
 }
 
-input[type="checkbox"] {
-    visibility: hidden;
+@media screen and (min-width: 1024px) {
+    .menu-lateral { top: 11vh; }
+    .cabecalho__logo { height: 5rem; }
 }
 
-@media all and (min-width: 1024px) {
-    .menu {
-        height: auto;
+.menu-lateral--link {
+    display: block;
+    padding: .2rem;
+}
+
+.menu-lateral__login--link { display: none; }
+
+@media screen and (min-width: 1440px) {
+    .menu-lateral {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: .5rem;
-    }
-    .menu__conteudo {
-        display: inline-block;
-    }
-
-    .menu__conteudo--link {
-        display: inline-block;
-        background-color: #fff;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2rem;
         box-shadow: none;
-        align-content: center;
+    
         width: auto;
-        padding-right: 1rem;
+        right: 0;
+        top: auto;
+        
+        padding: .5rem;
+        position: absolute;
     }
 
-    /*display do menu*/
-    .toggle,
-    [id=drop] {
-        display: none;
-    }
-
-    .menu__conteudo--desktop {
+    .menu-lateral--link, .menu-lateral__login--link {
         display: inline-block;
+        padding-right: 2rem;
     }
+
+    .menu-lateral__login--link {
+        padding-left: .5rem;
+        font-family: var(--familia);
+    }
+}
+
+.menu-lateral--ativo {
+    display: inline-block;
+    right: 0;
+}
+
+main {
+    padding-top: 8rem;
 }
