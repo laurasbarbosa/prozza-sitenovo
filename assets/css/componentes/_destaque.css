@@ -1,5 +1,5 @@
 .destaque {
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
 }
 
@@ -8,16 +8,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-        "destaque__conteudo destaque__imagem"
+        "destaque__conteudo destaque__img"
         ;
     }
 
-    .destaque__imagem { grid-area: destaque__imagem; }
-
-    .destaque__conteudo {
-        grid-area: destaque__conteudo;
-        text-align: left;
-
-        padding-right: 2rem;
-    }
+    .destaque__img { grid-area: destaque__img; }
+    .destaque__conteudo { grid-area: destaque__conteudo; }
 }

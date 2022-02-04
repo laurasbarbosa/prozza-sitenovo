@@ -1,13 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Prozza.co Website">
     <title>Planos | prozza.co</title>
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/base/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/base/rodape.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/icones.css">
+    <link rel="stylesheet" href="assets/css/componentes/imagens.css">
+    <link rel="stylesheet" href="assets/css/estilo-planos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="container cabecalho">
+        <img src="assets/img/logo/logo-prozza.png" alt="Logotipo do Prozza" class="cabecalho__logo">
+        <button class="fa icone__menu" aria-label="Menu"><i></i></button>
+        <nav class="menu-lateral">
+            <a class="menu-lateral--link" href="#destaque">O que é Prozza?</a>
+            <a class="menu-lateral--link" href="#personalizacao">Personalização</a>
+            <a class="menu-lateral--link" href="#integracao">Integração</a>
+            <a class="menu-lateral--link" href="planos.html">Planos</a>
+            <a class="menu-lateral__login--link" href="planos.html">
+                <button class="botao botao--menu">Cadastre-se</button>
+            </a>
+            <a class="menu-lateral__login--link icone__usuario-circle" href="https://prozza.co/app/index.php" aria-label="Ícone de usuário">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container destaque-planos">
+            <img src="assets/img/edits/cels+laptop.gif" alt="Dois celulares" class="caixa destaque-planos__img">
+            <h2 class="titulo">Prepare-se para revolucionar sua comunicação e recuperação de leads</h2>
+        </section>
+        <section class="container detalhes">
+            <div class="caixa">
+                <h4 class="titulo--detalhes">DDD de destino</h4>
+                <p class="texto">As chamadas feitas pelo prozza usam números de celular com o DDD de destino do usuário cadastrado</p>
+            </div>
+            <div class="caixa">
+                <h4 class="titulo--detalhes">Follow up e suporte</h4>
+                <p class="texto">Além de te entregar a solução, também vamos te ajudar a entender e utilizar da melhor maneira para o seu negócio</p>
+            </div>
+            <div class="caixa">
+                <h4 class="titulo--detalhes">Integração facilitada</h4>
+                <p class="texto">Integre a ferramenta com seu gerenciador de leads de maneira simplificada e agil H3 - Compatibilidade</p>
+            </div>
+            <div class="caixa">
+                <h4 class="titulo--detalhes">Automação</h4>
+                <p class="texto">Gerencie fluxos de mensagens de maneira automática e eficiente</p>
+            </div>
+            <div class="caixa">
+                <h4 class="titulo--detalhes">Retorno</h4>
+                <p class="texto">Aproveite melhor seus leads e aumente suas conversões</p>
+            </div>
+            <div class="caixa">
+                <h4 class="titulo--detalhes">SMS Customizável</h4>
+                <p class="texto">Links personalizados e pessoais e shortcodes. Esses links nos ajudam a mensurar a performance da sua campanha e contam com Certificado de Segurança Integrado</p>
+            </div>
+        </section>
+        <!-- VALORES -->
+        <section class="container valores-planos">
+            <p class="texto texto--alto">SEM PREÇOS ESCONDIDOS!</p>
+            <h2 class="titulo">Escolha o plano que mais combina com o seu negócio!</h2>
+            <div class="botoes-planos">
+                <button class="botao-troca">Mensal</button>
+                <button class="botao-troca botao-troca--verde">Anual</button>
+            </div>
+        </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer class="container rodape">
+        <div class="rodape__principal">
+            <div class="rodape__conteudo">
+                <h2 class="titulo titulo--rodape">Prozza</h2>
+                <p class="texto">Aumente suas conversões com Prozza. Você vai ter a possibilidade de desenvolver o melhor tipo de anúncio para trabalhar com as ideias que sua marca gostaria de passar.</p>
+                <div class="midias-sociais">
+                    <span class="fab icone__facebook" aria-label="Ícone do Facebook"><i></i></span>
+                    <span class="fab icone__twitter" aria-label="Ícone do Twitter"><i></i></span>
+                    <span class="fab icone__linkedin" aria-label="Ícone do Linkedin"><i></i></span>
+                    <span class="fab icone__youtube" aria-label="Ícone do YouTube"><i></i></span>
+                    <span class="fas icone__telefone" aria-label="Ícone de um Telefone"><i></i></span>
+                </div>
+            </div>
+            <nav class="rodape__nav">
+                <div>
+                    <h3 class="titulo--nav">Links</h3>
+                    <ul>
+                        <li><a href="#destaque">O que é Prozza?</a></li>
+                        <li><a href="#personalizacao">Personalização</a></li>
+                        <li><a href="#integracao">Integrações</a></li>
+                        <li><a href="planos.html">Planos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="titulo--nav">Suporte</h3>
+                    <ul>
+                        <li><a href="https://ajuda.prozza.co">Ajuda &amp; Suporte</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                        <li><a href="https://ajuda.prozza.co/category/30-faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="rodape__escuro">
+            <p class="texto--copy">&copy; 2022 Prozza Powered by Prozza<br>Desenvolvido por <a href="https://kavicki.com/">Kavicki</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

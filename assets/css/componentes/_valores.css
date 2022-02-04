@@ -1,0 +1,15 @@
+.valores-planos {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .valores-planos h2 {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+.botoes-planos {
+    display: flex;
+    flex-direction: row;
+}

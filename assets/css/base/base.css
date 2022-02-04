@@ -2,6 +2,7 @@
 @import url(_variaveis.css);
 
 body {
+    width: 100vw;
     font-family: var(--familia);
     font-size: var(--tamanho-corpo);
     text-align: left;
@@ -13,16 +14,24 @@ body {
 }
 
 header {
+    width: 100vw;
     background-color: var(--branco);
     position: fixed;
 }
 
-.container {
-    width: 100vw; /*talvez trocar e colocar no body e header*/
+footer {
+    font-size: var(--tamanho-corpo-rodape);
+    text-align: justify;
+    line-height: 1rem;
+    color: var(--preto);
+    background-color: var(--fundo-secundario);
+}
 
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 1rem;
     
     box-sizing: border-box;
 
@@ -30,36 +39,47 @@ header {
     padding-left: 1rem;
 }
 
-.caixa { padding-top: 2rem; }
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
 
 .titulo {
+    display: block;
     font-size: var(--tamanho-titulo);
     color: var(--primaria1);
     
     line-height: 2.4rem;
-
-    display: block;
-
     padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
+    padding-bottom: 1rem;
 }
 
 .titulo--pequeno {
+    display: block;
     font-size: var(--tamanho-corpo);
     font-weight: var(--peso-titulob);
 
     line-height: 1.4rem;
-
-    display: block;
-
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
 }
 
-.titulo--caixa {
-    color: var(--verde);
+.caixa {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
-    padding-bottom: .5rem;
+.titulo--caixa { 
+    color: var(--verde);
+    padding-bottom: 0;
 }
 
 .texto {
@@ -68,33 +88,9 @@ header {
 }
 
 .texto--alto { text-transform: uppercase; }
-
-footer {
-    font-size: var(--tamanho-corpo-rodape);
-    text-align: justify;
-    background-color: var(--fundo-secundario);
-    
-    line-height: 1rem;
-    
-    padding-top: 5rem;
-}
-
+/*
 @media screen and (min-width: 1024px) {
-    header, .container, footer{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-    
-    .caixa {
-        max-width: 40vw;
-        padding-right: 1rem;
-        padding-left: 1rem;
+    body {
     }
 }
-
-@media screen and (min-width: 1440px) {
-    header, .container, footer {
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
-}
+*/

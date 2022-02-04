@@ -22,12 +22,12 @@
     
     --tamanho-corpo: .9rem;
     --tamanho-titulo: 2.2rem;
-    --tamanho-corpo-rodape: .75rem;
+    --tamanho-corpo-p: .75rem;
     --tamanho-titulo-rodape: 1.5rem;
     
     --peso-titulob: 700;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     :root { --tamanho-corpo: 1rem; }
 }

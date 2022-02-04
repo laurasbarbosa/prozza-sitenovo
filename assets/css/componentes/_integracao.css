@@ -8,18 +8,14 @@
 
 .integracao p { text-align: justify; }
 
-.integracao--imgs {
+.integracao__imgs {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    box-sizing: border-box;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-    .integracao--imgs {
+    .integracao__imgs {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
