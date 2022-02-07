@@ -1,7 +1,10 @@
 .personalizacao {
     color: var(--branco);
     background-color: var(--primaria1);
+    gap: 0;
 }
+
+.personalizacao p { padding-bottom: 0; }
 
 .personalizacao h5 {
     color: var(--branco);
@@ -11,6 +14,7 @@
 .personalizacao__img {
     position: relative;
     bottom: -3.375rem;
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -21,6 +25,7 @@
         ;
         gap: 16px;
     }
+    .personalizacao p { padding-bottom: 1rem; }
     .personalizacao__conteudo { grid-area: personalizacao__conteudo; }
     .personalizacao__img { grid-area: personalizacao__img; }
 }
