@@ -1,26 +1,22 @@
-.imagem {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+.imagem { width: 100%; }
 
 /*Imagem logo das ferramentas de integração*/
 .imagem__logo {
+    display: block;
     max-width: 350px;
     height: 4rem;
     padding: 1rem 0.75rem;
 
     box-sizing: border-box;
 }
-
 .imagem__logo--2 { height: 3rem; }
 
-.imagem__logo--3 { height: 4rem; }
-
 /* Perfil do cliente */
-.imagem__perfil {
+.imagem__perfil {/*
     width: 12.75rem;
-    height: 12.75rem;
+    height: 12.75rem;*/
+    width: 150px;
+    height: 150px;
     border: 3px solid var(--primaria1);
     border-radius: 100px;
 }

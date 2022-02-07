@@ -1,0 +1,33 @@
+.detalhes {
+    text-align: center;
+    background-color: var(--branco);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.titulo--detalhes {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--verde);
+    
+    line-height: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .detalhes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .detalhes {
+        padding: 8rem;
+    }
+}

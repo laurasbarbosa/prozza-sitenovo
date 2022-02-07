@@ -1,0 +1,15 @@
+@import url(componentes/_detalhes.css);
+@import url(componentes/_valores.css);
+
+.destaque-planos {
+    display: block;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.destaque-planos__img {
+    width: 100%;
+    max-width: 858.17px;
+    max-height: 332.3px;
+}

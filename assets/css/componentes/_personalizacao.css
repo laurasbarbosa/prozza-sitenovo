@@ -6,12 +6,9 @@
 .personalizacao h5 {
     color: var(--branco);
     font-size: 2.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
 }
 
-.personalizacao__imagem {
-    width: 100%;
+.personalizacao__img {
     position: relative;
     bottom: -3.375rem;
 }
@@ -20,17 +17,17 @@
     .personalizacao {
         display: grid;
         grid-template-areas:
-        "personalizacao__conteudo personalizacao__imagem"
+        "personalizacao__conteudo personalizacao__img"
         ;
         gap: 16px;
     }
     .personalizacao__conteudo { grid-area: personalizacao__conteudo; }
-    .personalizacao__imagem { grid-area: personalizacao__imagem; }
+    .personalizacao__img { grid-area: personalizacao__img; }
 }
 
 .personalizacao2 {
     text-align: justify;
 
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }

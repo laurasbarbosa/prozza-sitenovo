@@ -32,3 +32,27 @@
     padding-right: 2rem;
     padding-left: 2rem;
 }
+
+.botao-troca {
+    align-self: center;
+    background-color: var(--branco);
+    padding: .5rem 1rem .5rem 1rem;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.botao-troca {
+    font-size: 1.2rem;
+    color: var(--cinza);
+    background-color: var(--branco);
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border: 1px solid rgb(222, 222, 222);
+    cursor: pointer;
+    /*transition: all 200ms ease 0ms;*/
+}
+
+.botao-troca--verde {
+    color: var(--branco);
+    background-color: var(--verde);
+    transform: translate(-50%, 0px);
+    /*transition: all 200ms ease 0ms;*/
+}

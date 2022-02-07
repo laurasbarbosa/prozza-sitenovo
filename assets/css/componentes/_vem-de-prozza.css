@@ -1,14 +1,14 @@
 .vem-de-prozza {
     background-color: var(--azulclaro);
+    row-gap: 0;
 
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.vem-de-prozza__imagem {
+.vem-de-prozza__img {
     width: 100%;
-    position: relative;
-    top:-3.75rem;
-    max-width:43.75rem;
+    max-width: 43.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -16,19 +16,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "vem-de-prozza__conteudo vem-de-prozza__imagem"
+        "vem-de-prozza__conteudo vem-de-prozza__img"
         ;
         gap: 16px;
     }
 
-    .vem-de-prozza__imagem {
-        grid-area: vem-de-prozza__imagem;
+    .vem-de-prozza__img {
+        grid-area: vem-de-prozza__img;
+        position: relative;
+        top:-3.75rem;
     }
 
-    .vem-de-prozza__conteudo {
-        grid-area: vem-de-prozza__conteudo;
-        text-align: left;
+    .vem-de-prozza__conteudo { grid-area: vem-de-prozza__conteudo; }
+}
 
-        padding-right: 2rem;
-    }
+@media screen and (min-width: 1024px) {
+    .vem-de-prozza { padding-top: 1rem; }
 }
