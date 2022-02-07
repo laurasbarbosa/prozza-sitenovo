@@ -9,10 +9,11 @@
 .integracao p { text-align: justify; }
 
 .integracao__imgs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.integracao__imgs img { justify-self: center; }
 
 @media screen and (min-width: 768px) {
     .integracao__imgs {
@@ -22,5 +23,12 @@
         padding-right: 1rem;
         align-self: center;
         justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .integracao__imgs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
