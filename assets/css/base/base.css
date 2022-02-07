@@ -17,6 +17,7 @@ header {
     width: 100vw;
     background-color: var(--branco);
     position: fixed;
+    z-index: 3;
 }
 
 footer {
