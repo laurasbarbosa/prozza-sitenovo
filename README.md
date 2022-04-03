@@ -1,16 +1,13 @@
-# Guia de estilos
-[Link do projeto no xd](https://xd.adobe.com/view/70a11611-a2a8-46d0-99df-e12f3a3d4fa3-25f2/?fullscreen)
+## Sobre
+
+Projeto realizado em HTML5, CSS3 e sem utilização de frameworks, com o intuito de ser mais leve e integrado com php.
+O menu foi feito em JS para melhor aproveitamento e visualização na versão mobile.
 
 ## Fonte
 
-```html
-Montserrat:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-```
+Montserrat
 
-## Cores
+## Paleta de Cores
 
 (background) Superfícies: `#FCFCFC` - Branco
 
@@ -40,37 +37,3 @@ Botão:hover
 1. Cor da fonte: superfícies;
 2. Cor de fundo: secundária 2;
 3. Transição: 3s
-
-
-## Ícones
-
-```css
-@font-face {
-    font-family: 'FontAwesome';
-    src: url("../../font/fa-solid-900.woff2"), url("../../font/fa-regular-400.woff2");
-}
-@font-face {
-    font-family: 'Font Awesome 5 Brands';
-    src: url("../../font/fa-brands-400.woff2");
-}
-```
-
-Menu = `\f0c9`
-
-Usuário círculo = `\f2bd`
-
-Tag = `\f02c`
-
-Network = `\f6ff`
-
-Usuário relógio = `\f4fd`
-
-facebook = `\f39e`
-
-twitter = `\f099`
-
-linkedin = `\f167`
-
-youtube = `\f0e1`
-
-telefone = `\f879`
