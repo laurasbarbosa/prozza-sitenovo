@@ -5,7 +5,7 @@ O menu foi feito em JS para melhor aproveitamento e visualização na versão mo
 
 ## Direitos
 
-Projeto realizado por [Kavicki](https://kavicki.com) para a empresa [Prozza](https://Prozza.co).
+Projeto realizado por [Kavicki](https://kavicki.com).
 Todos os direitos reservados, proibida a reprodução parcial ou integral do conteúdo sem autorização prévia.
 
 ## Site
